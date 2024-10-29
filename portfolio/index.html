@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website of Vishal</title>
+    <script src="https://kit.fontawesome.com/a9be92bd9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="logo2_pic.jpg"  class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hi, I'm <span>Vishal Daimane</span><br> from Msrit</h1>
+            </div>
+        </div>
+
+    </div>
+   <!---------------about----------------> 
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my portfolio! I'm Vishal Prakash Daimane, a passionate engineering student at MS Ramaiah Institute of Technology, specializing in Bachelor of Engineering in Artificial Inteligence and Data Science. With a keen interest in web development and UI/UX design, I blend technical expertise with creative flair. As an artist, I find joy in expressing myself through drawing and painting. Explore my portfolio to witness the synergy of technology and artistry, showcasing my skills and projects that define my journey.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br>HTML,CSS,Javascript</li>
+                            <li><span>App development</span><br>Java/Flutter</li>
+                            <li><span>Data Structures And Algorithms</span><br>Problem Solving skills</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Web Development Internship in our college containing HTML,CSS,Javascript</li>
+                            <li><span>2023</span><br>Attended Code Craft Workshop</li>
+                            <li><span>2023</span><br>Attended classes in M S Ramaiah Institute of Technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>BE in Ramaiah Institute of Technology</li>
+                            <li><span>2021-2022</span><br>PUC in ALVA'S PU COLLEGE</li>
+                            <li><span>2010-2020</span><br>1st std to SSLC in Anand Ashram Convent High School </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------services--------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>Crafting innovative and responsive websites tailored to your unique vision. From front-end design to back-end functionality, I specialize in creating seamless digital experiences that elevate your online presence.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App development</h2>
+                    <p>Transforming ideas into dynamic mobile experiences. I specialize in app development, creating intuitive and feature-rich applications for both iOS and Android platforms. From conceptualization to deployment, I bring your vision to life with cutting-edge technology and user-centric design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Art work and painting</h2>
+                    <p>Bringing creativity to life through custom commission artwork and painting services. Whether you're seeking personalized illustrations or vibrant canvases, I specialize in capturing your vision and emotions on every brushstroke. Elevate your space with unique, handcrafted art that tells your story.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------portfolio----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="rock.jpg" >
+                    <div class="layer">
+                        <h3>Rock Paper Scissor game</h3>
+                        <p>Experience the classic game of Rock, Paper, Scissors in a digital realm! Dive into a dynamic web-based rendition crafted with HTML, CSS, and JavaScript. Engage in strategic battles, test your quick decision-making skills, and enjoy a visually appealing interface. It's a modern twist on a timeless game, bringing interactive fun to your digital world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="calci.jpg" >
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Effortless calculations at your fingertips! Explore the simplicity and functionality of my web-based calculator, meticulously crafted using HTML, CSS, and JavaScript. From basic arithmetic to complex equations, this user-friendly tool ensures precision and convenience. Enhance your digital workspace with a seamless calculator experience that makes number crunching a breeze.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="color_match.jpg" alt="">
+                    <div class="layer">
+                        <h3>Remember the color game</h3>
+                        <p>Experience the classic game of Rock, Paper, Scissors in a digital realm! Dive into a dynamic web-based rendition crafted with HTML, CSS, and JavaScript. Engage in strategic battles, test your quick decision-making skills, and enjoy a visually appealing interface. It's a modern twist on a timeless game, bringing interactive fun to your digital world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!------------------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left"> 
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> vishaldaimane007@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7619307967</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/vishal_daimane/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://in.linkedin.com/in/vishal-daimane-797534255"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/vishal.daimane/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Vishal</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
